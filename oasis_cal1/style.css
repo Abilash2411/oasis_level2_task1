@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e2024;
+}
+
+.calculator {
+    background-color: #2b2e33;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+.display {
+    background-color: #1a1c20;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 2.5em;
+    text-align: right;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    word-wrap: break-word;
+}
+
+.buttons {
+    display: grid;
+    /* Creates 4 equal columns */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    padding: 20px 10px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #3b3f46;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #4c515a;
+}
+
+.operator {
+    background-color: #f39c12;
+}
+
+.operator:hover {
+    background-color: #d68910;
+}
+
+.clear {
+    background-color: #e74c3c;
+}
+
+.clear:hover {
+    background-color: #c0392b;
+}
+
+.equals {
+    background-color: #2ecc71;
+    /* Makes the equals button span two rows */
+    grid-row: span 2; 
+}
+
+.equals:hover {
+    background-color: #27ae60;
+}
+
+.zero {
+    /* Makes the zero button span three columns */
+    grid-column: span 3;
+}
